@@ -48,7 +48,7 @@ class NodeImagesActivation {
  */
   public function onDeactivation(&$controller) {
     $controller->Croogo->removeAco('NodeImages');
-    $this->_schema('drop');
+//    $this->_schema('drop');
 }
 		
 /**
@@ -71,11 +71,16 @@ class NodeImagesActivation {
 			$schema = $schema->load();
 			foreach($schema->tables as $table => $fields) {
 			  if($action == 'create') {
+				$tables = $db->listSources();
+				if(!in_array($table,$tables)){
 			  	$sql = $db->createSchema($schema, $table);
+				$db->execute($sql);
+				}
 			  } else {
   			  $sql = $db->dropSchema($schema, $table);
-			  }
 				$db->execute($sql);
+			  }
+
 			}
 		}
 	}
