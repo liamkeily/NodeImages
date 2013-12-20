@@ -1,6 +1,6 @@
 {
-	"name": "NodeImages",
-	"description": "Allows you to attach images to nodes. This plugin requires ElFinder or MoxieManager",
+	"name": "MenuLinks",
+	"description": "This plugin makes it easier to create links on the menu by allowing you to do it from the node editor.",
 
 	"author": "Liam Keily",
 	"authorEmail": "liam@simplywebsites.com",
@@ -8,7 +8,6 @@
 
 	"dependencies": {
 		"plugins": [
-		  "ElFinder"
 		]
 	}
 }
