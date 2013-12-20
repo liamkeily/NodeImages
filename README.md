@@ -1,12 +1,20 @@
-# Menu Links
+# NodeImages
 
-## Introdction
+## Introduction
 
-This plugin is built to make it easier to add links the menu
+This plugin creates a new tab in the node editor which allows you to add images.
 
-## Features
+You can add multiple images in one go and reorder the images. 
 
-The nodes editor has a new tab which allows you to add a link to the menu, or edit the existing one
+## Requirements
 
-## Screenshot
+This plugin requires another plugin called "ElFinder" to be installed.
+
+This can be found at: https://github.com/phpMagpie/ElFinder/ 
+
+## Usage
+
+The plugin sets the variable 'images' for use in the View file for the 'view' action of nodes controller. 
+
+This can be used in a Theme.
 
