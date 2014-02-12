@@ -19,9 +19,7 @@ class NodeImagesComponent extends Component {
 			Croogo::hookAdminTab('Nodes/admin_add','Images','NodeImages.NodeImages');
 			Croogo::hookAdminTab('Nodes/admin_edit','Images','NodeImages.NodeImages');
 			
-			
 			if (!empty($controller->request->data['NodeImage'])) {
-			
 				foreach ($controller->request->data['NodeImage'] as $uuid => $fields) {
 					foreach ($fields as $field => $vals) {
 						$controller->Security->unlockedFields[] = 'NodeImage.' . $uuid . '.' . $field;

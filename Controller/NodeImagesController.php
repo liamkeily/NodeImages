@@ -15,7 +15,7 @@ App::uses('Croogo', 'Lib');
  * @link     http://www.liamkeily.com
  */
 
-class NodeImagesController extends NodeImagesAppController {
+class NodeImagesController extends AppController {
 
 /**
  * Controller name
