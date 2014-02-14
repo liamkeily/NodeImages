@@ -1,5 +1,4 @@
 <?php
-
 App::uses('NodeImagesAppModel', 'NodeImages.Model');
 
 class NodeImage extends NodeImagesAppModel {

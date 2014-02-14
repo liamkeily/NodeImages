@@ -13,7 +13,8 @@
       // Create instance of elfinder
       imagepicker.div = $("#images_finder");
       imagepicker.elf = imagepicker.div.elfinder({
-      url : '<?php echo $this->Html->url(array('plugin'=>'el_finder','controller'=>'el_finder','action'=>'connector')) ?>'  // connector URL (REQUIRED)
+      url : '<?php echo $this->Html->url(array('plugin'=>'el_finder','controller'=>'el_finder','action'=>'connector')) ?>',
+      height:300
       }).elfinder('instance');
   
       // Create a dialog for elfinder
