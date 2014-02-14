@@ -14,7 +14,14 @@ This can be found at: https://github.com/phpMagpie/ElFinder/
 
 ## Usage
 
-The plugin sets the variable 'images' for use in the View file for the 'view' action of nodes controller. 
+This plugin allows you to add images to a node.
 
-This can be used in a Theme.
+This plugin populates $images variable on the node view.
 
+## Elements
+
+The plugin contains elements which can be used to display images.
+
+> echo $this->element('NodeImages.featured_image');
+
+> echo $this->element('NodeImages.gallery');
