@@ -15,7 +15,7 @@ class NodeImagesHelper extends AppHelper {
 	public function row($title = null, $url = null, $id = null,$i=null) {
 		$uuid = String::uuid(); 
 		?>
-    <tr id="Image_<?=$id;?>" class="image">
+    <tr id="Image_<?php echo $id;?>" class="image">
       <td>
         <?php
         if($id != null){

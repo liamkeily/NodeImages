@@ -70,25 +70,7 @@
           }
         });
       });
-    });
-        
-  </script>
 
-  <div id="images_finder" title="Select Files"></div>
-
-  <script>
-    $(function(){
-      /*
-      $('.Image-add').click(function(){
-          $.ajax({
-              url:"<?php echo $this->Html->url(array("plugin"=>"node_images","controller"=>"node_image","action"=>"add"));?>",
-              success:function(data){
-                  $("#Images").append(data);
-              }
-          })
-      });
-      */
-      
       $('table').on('click','.Image-delete',function(){
         var row = $(this).parent().parent();
         var id = row.attr('id').split('_')[1];
@@ -124,7 +106,10 @@
         }
       });
     });
+        
   </script>
+
+  <div id="images_finder" title="Select Files"></div>
 
   <table class="table table-striped" id="Images">
     <tr><th>Image Caption</th><th>Image</th><th>Actions</th></tr>
